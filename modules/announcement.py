@@ -6,7 +6,7 @@ class Announcement(commands.Cog):
         self.bot = bot
 
     @commands.command(name="announcement")
-    @commands.has_permissions(administrator=True)  # Only admins can use this command
+    @commands.has_permissions(administrator=True)  
     async def announcement(self, ctx, channel: discord.TextChannel, *, message: str):
         """Send an announcement to a specific channel as an embed."""
         
